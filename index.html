@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta http-equiv = "cache-control" content = "max-age=0">
+<meta http-equiv = "cache-control" content = "no-cache">
+<meta http-equiv = "expires" content = "0">
+<meta http-equiv = "expires" content = "Tue, 01 Jan 1970 1:00:00 GMT">
+<meta http-equiv = "pragma" content = "no-cache">
+	<link rel="stylesheet" type="text/css" href="style_New.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+
+	<header>
+
+		<div class="dropdown">
+		<img  class="dropbtn"  onmouseover="ImgOne(this)" onmouseout="ImgTwo(this)"  src="img/SalesWorks2.jpg">
+			<div class="dropdown-content">
+    			<a href="http://helpsw.datacenter.ssbs.com.ua/SWEDocs/SWE/2.61.1/Html/">SWE Manual</a>
+    			<a href="https://docs.google.com/spreadsheets/d/1UN3F5nt42MiH0duVvpfQpWkgMsnuR2q9zrnE7OkxAbw/edit#gid=0">Recommended devices</a>
+    			<a href="https://www.softservebs.com/">Softserve BS</a>
+  			</div>
+		</div>
+		
+		<nav class="toutherFunc">
+			<a href="https://kfu.datacenter.ssbs.com.ua/SalesWorksWeb">WEB UA</a>
+			<a href="https://kfu.datacenter.ssbs.com.ua/SalesWorksReportWeb">Отчеты UA</a>|
+			<a href="https://kfu.datacenter.ssbs.com.ua/SalesWorksWeb_KFI/">WEB NM</a>
+			<a href="https://kfu.datacenter.ssbs.com.ua/SalesWorksReportWeb_KFI">Отчеты NM</a>|
+			<a href="https://kfu.datacenter.ssbs.com.ua/RDWeb">Удаленный рабочий стол</a>
+			
+		</nav>
+		<img class="JacLogo" src="img/Mondelez.png">
+	</header>
+
+	<main>
+		<div class="navigator">
+			<p class="slogan">SalesWorks - решение для мобильной торговли.</p>
+			<nav class="chapterholder">
+				<div class="chapter" id="chapter1" onclick="changeview(this,'newsid')">
+					<div class="iconHolder"><i class="material-icons" id="icon1">speaker_notes</i></div>
+					<p class="chapterName" id="cName1">Новости</p>
+				</div>
+				<div class="chapter" id="chapter2" onclick="changeview(this,'instructions')">
+					<div class="iconHolder"><i class="material-icons" id="icon2">computer</i></div>
+					<p class="chapterName"  id="cName2">Инструкции КП</p>
+				</div>
+				<div class="chapter" id="chapter3" onclick="changeview(this,'instructionsTA')">
+					<div class="iconHolder"><i class="material-icons" id="icon3">phone_android</i></div>
+					<p class="chapterName"  id="cName3">Инструкции торгового агента</p>
+				</div>
+				<div class="chapter" id="chapter4" onclick="changeview(this,'videoinst')">
+					<div class="iconHolder"><i class="material-icons" id="icon4">local_movies</i></div>
+					<p class="chapterName"  id="cName4">Видеоинструкции</p>
+				</div>
+				<div class="chapter" id="chapter5" onclick="changeview(this,'save')">
+					<div class="iconHolder"><i class="material-icons" id="icon5">file_download</i></div>
+					<p class="chapterName"  id="cName5">Инсталляторы</p>
+				</div>
+				<div class="chapter" id="chapter6" onclick="changeview(this,'statist')">
+					<div class="iconHolder"><i class="material-icons" id="icon6">library_books</i></div>
+					<p class="chapterName"  id="cName6">Статистические данные</p>
+				</div>
+
+			</nav>
+		</div>
+		<section class="maininfo">
+
+			<article class="news displayHide" id="newsid">
+				<img class="newsfun" src="img\newspaper.png">
+				<div class="newsConteiner" id="demo">
+					<!--<h3>Оновлення стартової сторінки<small>(Дата публікації хх.хх.хххх)</small></h3>
+					<p>хх.хх.хххх почала свою роботу оновлена версія стартової сторінки з доступними текстовими та відеоінструкціями.</p>-->
+				</div>
+			</article>
+			<article  class="insForKK displayHide" id = "instructions" >
+				<table class="inst">
+					<tr>	
+						<td class="instdesc">
+							<h3>Индивидуальная сортировка товаров</h3>
+							<p>Инструкция описывает настройки НБД, которые необходимо осуществить для возможности индивидуального сортировки позиций.</p>
+						</td>
+						<td class="instfunc">
+							<a href="instructions\Individual_product_sorting.docx">Скачать<br></a>
+						</td>
+						<td class="instfunc">
+							<a target="_blank" href="instructions\Individual_product_sorting.pdf">Посмотреть<br></a>
+						</td>
+					</tr>
+					<tr>	
+						<td class="instdesc">
+							<h3>Настройка расписания синхронизаций НБД с ЦБД</h3>
+							<p>Описание процесса настройки автоматической синхронизаии с центральным модулем.</p>
+						</td>
+						<td class="instfunc">
+							<a href="instructions\Configure_synchronization_schedule.docx">Скачать<br></a>
+						</td>
+						<td class="instfunc">
+							<a target="_blank" href="instructions\Configure_synchronization_schedule.pdf">Посмотреть<br></a>
+						</td>
+					</tr>
+				</table>
+			</article>
+			<article  class="insForTA displayHide" id = "instructionsTA" >
+				<table class="instTA">
+					<tr>	
+						<td class="instdesc">
+							<h3>Обновление SalesWorks на КПК</h3>
+							<p>Инструкция описывает методы обновления версии мобильного модуля.</p>
+						</td>
+						<td class="instfunc">
+							<a href="instructions\SalesWorks_Update_MDB.docx">Скачать<br></a>
+						</td>
+						<td class="instfunc">
+							<a target="_blank" href="instructions\SalesWorks_Update_MDB.pdf">Посмотреть<br></a>
+						</td>
+					</tr>
+					<tr>	
+						<td class="instdesc">
+							<h3>Отправка БД КПК</h3>
+							<p>В некоторых случаях консультант службы поддержки может запросить копию мобильной базы данных для проведения исследования в рамках запроса. Инструкция описывает один из методов отправления базы данных.</p>
+						</td>
+						<td class="instfunc">
+							<a href="instructions\Send_MBD.doc">Скачать<br></a>
+						</td>
+						<td class="instfunc">
+							<a target="_blank" href="instructions\Send_MBD.pdf">Посмотреть<br></a>
+						</td>
+					</tr>
+					<tr>	
+						<td class="instdesc">
+							<h3>Удаление БД на КПК</h3>
+							<p>Инструкция описывает процесс удаления мобильной базы данных и заливка новой при синхронизации.</p>
+						</td>
+						<td class="instfunc">
+							<a href="instructions\RebuildMBD.doc">Скачать<br></a>
+						</td>
+						<td class="instfunc">
+							<a target="_blank" href="instructions\RebuildMBD.pdf">Посмотреть<br></a>
+						</td>
+					</tr>
+					<tr>	
+						<td class="instdesc">
+							<h3>Сброс к заводским настройкам.</h3>
+							<p>Назначеним ПО и осуществлены настройки иногда могут препятствовать работе программы SalesWorks. В таких случаях может быть предложено вернуть состояние КПК к заводским настройкам. Этот процесс описан в инструкции на примере бренда Samsung.</p>
+						</td>
+						<td class="instfunc">
+							<a href="instructions\HardReset_Samsung_smt231.doc">Скачать<br></a>
+						</td>
+						<td class="instfunc">
+							<a target="_blank" href="instructions\HardReset_Samsung_smt231.pdf">Посмотреть<br></a>
+						</td>
+					</tr>
+				</table>
+
+			</article>
+
+
+			<article class="video displayHide" id="videoinst">
+				<div class="panelholder">
+					<button class="accordion" onclick="changeButton(this)">Описание справочников ММ</button>
+					<div class="panel">
+					  <ul>
+					  	<li onclick = "chanel(1)">Визит</li>
+					  	<li onclick = "chanel(2)">Справочники</li>
+					  	<li onclick = "chanel(3)">Эталонные координаты</li>
+					  	<li onclick = "chanel(8)">Задание</li>
+					  	<li onclick = "chanel(9)">Отчеты</li>
+					  	<li onclick = "chanel(10)">Фото</li>
+					  </ul>
+					</div>
+
+					<button class="accordion" onclick="changeButton(this)">Работа с NFC метками (UA)</button>
+					<div class="panel">
+					  <ul>
+					  	<li onclick = "chanel(5)">Установка нового оборудования</li>
+					  	<li onclick = "chanel(6)">Подтверждение</li>
+					  	<li onclick = "chanel(4)">Изъятие и неподтверждения</li>
+					  </ul>
+					</div>
+
+					<button class="accordion" onclick="changeButton(this)">Другое</button>
+					<div class="panel">
+					  
+					</div>
+				</div>
+				<div id="cinema">
+						<div class="videoholder" id="video1">
+				  				<h1>Визит</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/xJKYZzjZ_vQ?enablejsapi=1"
+				  				 frameborder="0" allowfullscreen></iframe>
+			  			</div>
+			  			<div class="videoholder"  id="video2">
+				  				<h1>Справочники</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/lA8Y3tRxIg4?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			  			</div>
+			  			<div class="videoholder"  id="video3">
+				  				<h1>Эталонные координаты</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/C6qMgUdaCqM?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			  			</div>
+			  			<div class="videoholder"  id="video8">
+				  				<h1>Задание</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/nFISoFUwsaI?list=PL4A8N3uq-jaDkQLz208yfQrLzO3UxMYKN?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			  			</div>
+			  			<div class="videoholder"  id="video9">
+				  				<h1>Отчеты</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/J7jJuo3Zbec?list=PL4A8N3uq-jaDkQLz208yfQrLzO3UxMYKN?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			  			</div>
+			  			<div class="videoholder"  id="video10">
+				  				<h1>Фото</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/ITo4hvUMVPQ?list=PL4A8N3uq-jaDkQLz208yfQrLzO3UxMYKN?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			  			</div>
+			  			<div class="videoholder" id="video4">
+				  				<h1>Изъятие и неподтверждения</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/rr-4H6sdt8E?enablejsapi=1"
+				  				 frameborder="0" allowfullscreen></iframe>
+			  			</div>
+			  			<div class="videoholder"  id="video5">
+				  				<h1>Установка нового оборудования</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/MbJ4rUlsyHs?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			  			</div>
+			  			<div class="videoholder"  id="video6">
+				  				<h1>Подтверждение</h1>
+				  				<iframe class = "frm" width="560" height="315" src="https://www.youtube.com/embed/_GI22VJla78?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+			  			</div>
+
+
+			</article>
+
+
+			<article class="install displayHide" id="save">
+				<img src="img\software.jpg" class="savefun">
+				<table>
+						<tr>
+							<th>Name</th>
+							<th class="icon">Save</th>
+						</tr>
+						<tr>
+							<td>SWEAndroidMobileInstaller_2.61.09.01</td>
+							<td class="icon"><a href="apkfiles\SWEAndroidMobileInstaller 2.61.09.01.apk"><img src="img\save.png"></a></td>
+						</tr>
+						<tr>
+							<td>SWEAndroidMobileInstaller_2.61.07.01</td>
+							<td class="icon"><a href="apkfiles\SWEAndroidMobileInstaller_2.61.07.01.apk"><img src="img\save.png"></a></td>
+						</tr>
+						<tr>
+							<td>SWEAndroidMobileInstaller_2.61.05.01</td>
+							<td class="icon"><a href="apkfiles\SWEAndroidMobileInstaller_2.61.05.01.apk"><img src="img\save.png"></a></td>
+						</tr>
+				</table>
+			</article>
+			<article class = "statistic displayHide" id = 'statist'>
+				<div class="stathold">
+					<div class = "stbh">
+							<div class="statbut" onclick="displaypasscheck('passcheck1')">Статистическая информация UA</div>
+							<div class="statbut" onclick="displaypasscheck('passcheck2')">Статистическая информация NM</div>
+					</div>
+					<div class=passcheckhold>
+						<div id="passcheck1" class=passcheck>
+							<h3>Введите логин и пароль</h3>
+							<p>Login:</p>
+							<input type="text" name="login" id="logg1">
+							<p>Password:</p>
+							<input type="password" name="password" id = "pass1"><br>
+							<div id="errmess1" class = 'errmessclass'> </div>
+							<button class = 'butt' onclick="passcheck1()">Login</button>
+						</div>
+						<div id="passcheck2" class=passcheck>
+							<h3>Введите логин и пароль</h3>
+							<p>Login:</p>
+							<input type="text" name="login" id="logg2">
+							<p>Password:</p>
+							<input type="password" name="password" id = "pass2"><br>
+							<div id="errmess2" class = 'errmessclass'> </div>
+							<button class = 'butt' onclick="passcheck2()">Login</button>
+						</div>
+						<div class= 'projInfo'>
+							<div id = 'statinfo'></div>
+						</div>
+
+					</div>
+				</div>	
+			</article>
+
+		</section> 	
+	</main>
+
+	<div class="ass"></div>
+	<footer class="foo">
+		<div class="conteiner3">
+			<div class="licensed">
+				<p>SalesWorks® - официально зарегистрированная торговая марка, охраняется законом.</p>
+				<p>© 1998-2017 SoftServe Business Systems. Все права защищены.</p>
+			</div >
+			<div class="contacts">
+				<p>Contacts:</p>
+				<p>Phone UA: +38 (032) 240 90 96</p>
+				<p>Phone RU: +7 (499) 638 39 79</p>
+			</div>
+			<div class="contacts">
+				<p>E-mail:</p>
+				<p>support@softservebs.com</p>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
