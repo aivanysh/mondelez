@@ -1,0 +1,10 @@
+<passlist> 
+     <admins category="admins"> 
+       <login>admin</login> 
+       <pass>123</pass> 
+    </admins> 
+     <admins category="admins"> 
+       <login>aivanysh</login> 
+       <pass>321</pass> 
+    </admins> 
+</passlist>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+
+<newslist> 
+   <news category="cooking"> 
+       <title lang="en">Everyday It</title> 
+       <date>Giada De Laurentiis</date> 
+       <description>2005</description> 
+    </news> 
+   <news category="children"> 
+       <title lang="en">Harry Potter</title>
+       <date>J K. Rowling</date> 
+       <description>2005</description> 
+    </news> 
+   <news category="web" cover="paperback"> 
+       <title lang="en">Learning XML</title>
+       <date>Erik T. Ray</date> 
+       <description>2003</description> 
+   </news> 
+</newslist>
+
+</root>
